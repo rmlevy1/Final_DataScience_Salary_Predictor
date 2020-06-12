@@ -32,7 +32,7 @@ A few highlights below. \
 For further EDA, check the EDA & Feature Engineering file.
 
 #### Modeling
-One hot encoded all the categorical variables, creating 140 columns. \
+One hot encoded all the categorical variables, creating 140 features. \
 Performed a train-test split of 80-20. 
 
 I tried four different models and evaluated them based on Mean Absolute Error due to its interpretability.
@@ -40,19 +40,20 @@ I tried four different models and evaluated them based on Mean Absolute Error du
  * Ridge & Lasso - Due to the sparse data in the many categorical features, I thought that a normalized regression would be effective.
  * Random Forest Regressor - Because of the sparsity associated with the data.
  
- Using GridSearchCV I found that the optimal alpha for Ridge was 27 and for Lasso 0.3.
+ ##### Feature Importance 
+Multiple Linear Regression, Ridge and Lass models gave the most significance to the degree, years of experience and job title features. It did not then make sense for me to remove those features (for future modeling) because common sense tells us that they do impact salary the data was just too sparse to come up with a conclusion. Please check the modeling file for further explanation.
 
-#### Model Results (Mean Absolute Error)
+##### Model Results (Mean Absolute Error)
 * Baseline Model - 25.71
 * Multiple Linear Regression - 22.16
 * Ridge - 20.88
 * Lasso - 20.37
 * Random Forest Regressor - 21.05
 
+The Lasso model performed the best with a mean absolute error of 20.37, meaning that its predictions were off by an average of $20,370.00 from othe actual salaries.\
+The most realistic model to use in the future(more data) is the Ridge model. Although it did not beat the Lasso model's predictability strength it realistically penalized features. I wrote more about this in the modeling file. 
 
-The Lasso model performed the best with a mean absolute error of 20.37, meaning that its predictions were off by an average of $20,370.00 from othe actual salaries.
-
-#### Slides
+#### Presentation
 https://docs.google.com/presentation/d/1XiKExI6fY0AYU-il6l1-6o2bkgk8NSuOgG5JwhFysVg/edit?usp=sharing
 
 ## Further Work:
