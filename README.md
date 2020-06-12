@@ -6,24 +6,18 @@ Create a prediction model that will predict Data Analyst, Data Engineer, Machine
 ## Social Case: 
 Help those landing a Data Science job negotiate their salary based off personalized criteria.
 
+## Repository 
+1. Data Cleaning & Feature Engineering
+2. EDA & Feature Engineering
+3. Modeling
 
 ## Process:
 #### Acquiring Data
 Scraped ~1,500 jobs from Glassdoor via selenium\
-(Received help from this blog post https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905) \
-Scraped the following information from each job posting
-* Job Title
-* Salary Estimate
-* Job Description
-* Rating
-* Company Name
-* Location
-* Headquarters Location
-* Company Size (Employees)
-* Year company founded
-* Type of Ownership
-* Sector
-* Revenue
+(Credit to: https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905) \
+
+Scraped the following information from each job posting \
+Job Title, Salary Estimate, Job Description, Rating, Company Name, Location, Headquarters Location, Company Size (Employees), Year company founded, Type of Ownership, Sector, Revenue
 
 #### Data Cleaning & Feature Engineering
 * Created a function to categorize job titles in to either:
