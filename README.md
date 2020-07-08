@@ -26,7 +26,7 @@ Check Data Cleaning & Feature Engineering file.
 I inspected Features vs Average Salary to check for impact of features on the target variable. \
 I checked Features vs Value Counts to check for sparsity of data and to check hiring trends for data scientists. \
 A few highlights below. \
-<img src="Project%20Images/Comp_Size.png" width="275">
+<img src="Project%20Images/Comp_Size.png" width="300">
 <img src="Project%20Images/Job_Titles.png" width="300">
 <img src="Project%20Images/Seniority.png" width="300">\
 For further EDA, check the EDA & Feature Engineering file.
