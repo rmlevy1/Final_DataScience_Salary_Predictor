@@ -41,7 +41,7 @@ I tried four different models and evaluated them based on Mean Absolute Error du
  * Random Forest Regressor - Because of the sparsity associated with the data.
  
  ##### Feature Importance 
-Multiple Linear Regression, Ridge and Lass models gave the most significance to the degree, years of experience and job title features. It did not then make sense for me to remove those features (for future modeling) because common sense tells us that they do impact salary the data was just too sparse to come up with a conclusion. Please check the modeling file for further explanation.
+Multiple Linear Regression, Ridge and Lasso models accorded the most significance to type of degree, years of experience and job title features. It did not then make sense for me to remove the other included in the model(for future modeling) because common sense tells us that they do impact salary the data was just too sparse to come up with a conclusion. Please check the modeling file for further explanation.
 
 ##### Model Results (Mean Absolute Error)
 * Baseline Model - 25.71
